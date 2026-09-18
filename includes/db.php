@@ -1,9 +1,9 @@
 <?php
 
-$host = "MYSQL8001.site4now.net";
-$user = "aab177_alex351";
-$password = "ELxdmaster28";
-$database = "db_aab177_alex351";
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "medicina";
 
 
 $conexion = mysqli_connect($host, $user, $password, $database);

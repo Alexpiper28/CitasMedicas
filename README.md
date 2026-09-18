@@ -1,59 +1,85 @@
-Sistema de Citas Médicas
-Descripción:
-El Sistema de Citas Médicas es una aplicación web diseñada para facilitar la gestión de citas entre pacientes y médicos en una clínica médica. La aplicación permite a los pacientes reservar citas en línea, acceder a su historial médico electrónico y recibir recordatorios de citas, mientras que proporciona a los médicos una interfaz intuitiva para administrar sus horarios y consultar los expedientes de los pacientes.
+# SanaCitas
 
-Funcionalidades Principales:
-Reserva de citas en línea para pacientes.
-Historial médico electrónico accesible para médicos y pacientes.
-Recordatorios automáticos de citas por correo electrónico o SMS.
-Gestión de horarios y disponibilidad de médicos.
-Interfaz amigable y fácil de usar para pacientes y médicos.
-Contribución al Proyecto:
-¡Gracias por considerar contribuir al desarrollo del Sistema de Citas Médicas! Si deseas participar, aquí hay algunas formas en las que puedes ayudar:
+Sistema web para la gestión de citas médicas de una clínica de atención primaria. Centraliza el registro de pacientes, médicos, especialidades, horarios y citas en una interfaz administrativa.
 
-Clona el repositorio y configura un entorno de desarrollo local.
-Explora las "issues" abiertas y contribuye con código para solucionar problemas o implementar nuevas características.
-Abre nuevas "issues" para sugerir mejoras, informar errores o discutir cambios importantes.
-Envía solicitudes de extracción (pull requests) con tus contribuciones para revisión y posible fusión con el repositorio principal.
+> Proyecto desarrollado con fines académicos y de portafolio.
 
-Cómo Contribuir al Proyecto:
-Clonar el Repositorio:
+## Vista previa
 
-Otros desarrolladores pueden seguir los pasos mencionados anteriormente para clonar el repositorio en sus propias computadoras.
-Explorar Issues Abiertas:
+Las siguientes vistas muestran los módulos principales de SanaCitas.
 
-Los desarrolladores pueden revisar la pestaña de "Issues" en GitHub para encontrar problemas abiertos que necesiten ser resueltos o características que necesiten ser implementadas.
-Pueden filtrar los problemas por etiquetas (como "bug", "enhancement", etc.) para encontrar los que mejor se ajusten a sus habilidades e intereses.
-Contribuir con Código:
+| Inicio de sesión | Registro de usuario |
+| --- | --- |
+| ![Inicio de sesión de SanaCitas](docs/capturas/login.png) | ![Registro de usuario en SanaCitas](docs/capturas/registro.png) |
+| Acceso de usuarios al sistema mediante sus credenciales. | Formulario para registrar nuevas cuentas para los usuarios. |
 
-Una vez que un desarrollador encuentra un problema o una característica en la que le gustaría trabajar, puede dejar un comentario en el problema para expresar su interés en resolverlo.
-Luego, pueden crear una nueva rama en su repositorio local para trabajar en la solución o la nueva característica.
-Después de realizar los cambios necesarios, pueden enviar una solicitud de extracción (pull request) al repositorio principal en GitHub.
-Revisar y Comentar Solicitudes de Extracción:
+| Panel administrativo | Gestión de usuarios |
+| --- | --- |
+| ![Panel administrativo de SanaCitas](docs/capturas/panel.png) | ![Gestión de usuarios de SanaCitas](docs/capturas/gestionarUsuario.png) |
+| Resumen de los registros de citas, pacientes, médicos y usuarios. | Administración de cuentas del sistema según los roles disponibles. |
 
-Los desarrolladores también pueden revisar y comentar las solicitudes de extracción enviadas por otros contribuyentes.
-Pueden ofrecer sugerencias, comentarios o correcciones sobre el código propuesto para mejorar la calidad del proyecto.
-Abrir Nuevos Issues:
+| Gestión de citas | Gestión de pacientes |
+| --- | --- |
+| ![Gestión de citas médicas](docs/capturas/citas.png) | ![Gestión de pacientes](docs/capturas/pacientes.png) |
+| Registro y seguimiento de citas por fecha, hora, paciente, médico y especialidad. | Consulta y administración de la información clínica y de contacto de los pacientes. |
 
-Si encuentran un error o tienen una idea para una nueva característica, pueden abrir un nuevo issue en GitHub para informar al equipo sobre ello.
-Deben proporcionar una descripción clara del problema o la característica propuesta, junto con cualquier información adicional relevante.
-Participar en Discusiones:
+| Gestión de médicos | Horarios de atención |
+| --- | --- |
+| ![Gestión de médicos](docs/capturas/medicos.png) | ![Horarios de atención](docs/capturas/horarios.png) |
+| Registro del personal médico y su especialidad asignada. | Organización de los días de atención asociados a cada médico. |
 
-Los desarrolladores pueden participar en discusiones en los issues abiertos y en las solicitudes de extracción para compartir sus opiniones y ayudar a tomar decisiones sobre el desarrollo del proyecto.
-Guía para Enviar Solicitudes de Extracción:
-Crear una Rama:
+| Especialidades médicas |
+| --- |
+| ![Gestión de especialidades médicas](docs/capturas/especialidades.png) |
+| Catálogo de especialidades disponible para la asignación de médicos y citas. |
 
-Crear una nueva rama localmente para trabajar en la corrección o característica.
-Asegurarse de basar la rama en la rama principal más reciente del repositorio.
-Hacer Cambios:
+> Las capturas contienen datos de demostración. Para publicaciones externas, usa información ficticia o difumina datos personales.
 
-Realizar los cambios necesarios en los archivos del proyecto en la nueva rama.
-Hacer Commit y Push:
+## Funcionalidades principales
 
-Hacer commit de los cambios y hacer push a la rama en el repositorio remoto en GitHub.
-Enviar la Solicitud de Extracción:
+- Autenticación de usuarios y control de acceso según rol: administrador, empleado, paciente y médico.
+- Panel administrativo con indicadores de citas, pacientes, médicos y usuarios registrados.
+- Registro, edición, consulta y eliminación de citas médicas.
+- Gestión de pacientes, médicos, usuarios, especialidades y horarios de atención.
+- Asociación de médicos con sus especialidades y carga dinámica de especialidades al registrar una cita.
+- Actualización del historial clínico del paciente: antecedentes, enfermedades y estado de atención.
+- Generación de historial clínico en PDF.
+- Tablas interactivas y confirmación visual antes de eliminar registros.
 
-Ir al repositorio en GitHub y seleccionar la opción para crear una nueva solicitud de extracción desde la rama recién creada.
-Proporcionar una descripción clara de los cambios realizados y por qué son necesarios.
-Esperar comentarios y revisión por parte del equipo antes de que la solicitud de extracción sea fusionada.
-Al seguir estas instrucciones, otros desarrolladores pueden contribuir de manera efectiva al proyecto y colaborar en su desarrollo continuo.
+## Tecnologías y herramientas
+
+| Área | Tecnologías |
+| --- | --- |
+| Backend | PHP 8, MySQLi |
+| Base de datos | MySQL / MariaDB |
+| Frontend | HTML5, CSS3, JavaScript, jQuery |
+| Interfaz | Bootstrap, SB Admin 2, Font Awesome |
+| Componentes | DataTables, SweetAlert2, AJAX |
+| Documentos | FPDF |
+| Entorno local sugerido | XAMPP (Apache + MySQL/MariaDB) |
+
+
+## Estructura del proyecto
+
+```text
+citas_medicas/
+├── css/                 # Estilos de la aplicación
+├── docs/capturas/       # Capturas para README y portafolio
+├── img/                 # Imágenes y recursos visuales
+├── includes/            # Conexión, sesiones, formularios y lógica PHP
+├── js/                  # Scripts de interfaz
+├── package/             # Librerías SweetAlert2 y FPDF
+├── views/               # Vistas administrativas
+├── index.php            # Punto de entrada
+```
+
+## Próximas mejoras
+
+- Aplicar hash de contraseñas y validación exhaustiva de datos en el servidor.
+- Usar consultas preparadas para reforzar la seguridad de la base de datos.
+- Incorporar agenda visual, notificaciones y filtros de disponibilidad.
+- Añadir pruebas automatizadas y configuración de despliegue.
+
+## Nota de seguridad
+
+Este repositorio está orientado a demostración. No debe utilizarse con datos clínicos reales sin implementar controles de seguridad, protección de datos, auditoría y políticas de acceso adecuadas.
